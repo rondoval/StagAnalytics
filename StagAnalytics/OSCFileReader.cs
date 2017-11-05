@@ -74,7 +74,7 @@ namespace StagAnalytics
 
             byte[] constant = file.ReadBytes(9);
             if (!constant.SequenceEqual(new byte[] { 0x09, 0x00, 0x00, 0x00, 0x00, 0x5e, 0x00, 0x00, 0x00 })) {
-                throw new ArgumentException("File format unrecognized - fixed sequence mismatch");
+         //       throw new ArgumentException("File format unrecognized - fixed sequence mismatch");
             }
 
             lpgON = file.ReadBoolean(); // LPG enabled and running
